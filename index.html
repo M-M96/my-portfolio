@@ -8,6 +8,74 @@
     <title>My Portfolio</title>
   </head>
   <body>
+    <header id="header-navi">
+      <nav><a href="#first-block">Home</a></nav>
+      <nav><a href="#second-block">About Me</a></nav>
+      <nav><a href="#third-block">Others</a></nav>
+    </header>
+    <div id="first-block">
+      <div id="intro">
+        <h2>まつむらみずき</h2>
+        <h1>松村泉希</h1>
+        <p class="birthday">誕生日：5月18日</p>
+        <p id="nowTime"></p>
+        <p class="to birthday">
+          残り○○日！！(カウントダウンタイマーつけたかった！)
+        </p>
+      </div>
+      <div id="present">
+        <button id="flower">花を投げる</button>
+        <button id="ouen">応援する</button>
+        <button id="zeni">投げ銭する</button>
+        <div id="hako" class="cherry-blossom-container">
+          <!-- ここにコンテンツを入れる -->
+        </div>
+      </div>
+    </div>
+    <div id="second-block">
+      <p class="myinfo">About Me</p>
+      <div id="my-container">
+        <div class="my">
+          <!-- jsのリストから呼び出せる？ -->
+          <ul>
+            <p>個人情報</p>
+            <li>出身 : 福井県</li>
+            <li>現住所 : 京都府</li>
+            <li>大学 : 同志社大学</li>
+            <li>学部 : 心理学部</li>
+          </ul>
+          <img src="images/image4.jpeg" />
+        </div>
+        <div class="my">
+          <img src="images/image5.jpeg" />
+          <ul>
+            <p>趣味</p>
+            <li>アニメ・映画鑑賞</li>
+            <li>お絵かき</li>
+            <li>散歩</li>
+            <li>スノボー　etc...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="third-block">
+      <p class="petinfo">Others</p>
+      <div id="pet-container">
+        <div class="pet">
+          <p>うさこ</p>
+          <img src="images/image2.jpeg" />
+        </div>
+        <div class="pet">
+          <img src="images/image1.jpeg" />
+          <p>ポメお</p>
+        </div>
+        <div class="pet">
+          <p>くろ</p>
+          <img src="images/image3.jpeg" />
+        </div>
+      </div>
+      <footer>Copyright © みずき All Rights Reserved.</footer>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

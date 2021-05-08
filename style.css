@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+#header-navi {
+  width: 100%;
+  height: 50px;
+  opacity: 1;
+  background-color: rgb(124, 1, 108);
+  position: fixed;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav {
+  margin: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline whitesmoke;
+}
+/* header */
+
+/* block */
+#first-block {
+  background-color: plum;
+  padding-top: 50px;
+  width: 100%;
+  height: 650px;
+}
+
+#second-block {
+  background-color: beige;
+  width: 100%;
+  height: 800px;
+}
+
+#third-block {
+  background-color: aliceblue;
+  width: 100%;
+  height: 650px;
+}
+
+p {
+  color: rgb(71, 69, 69);
+}
+/* block */
+
+/* HOME */
+h1,
+h2,
+.birthday {
+  text-align: center;
+  font-family: system-ui;
+  color: rgb(71, 69, 69);
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.birthday {
+  font-size: 60px;
+  margin: 10px;
+}
+
+.to {
+  font-size: 30px;
+}
+
+#nowTime {
+  margin: 20px;
+  text-align: center;
+}
+
+#present {
+  margin: auto;
+  text-align: center;
+}
+
+#present button {
+  width: 100px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin: 20px 10px;
+  box-shadow: 0 2px rgb(124, 1, 108);
+  cursor: pointer;
+}
+
+#present button:active {
+  box-shadow: none;
+  position: relative;
+  top: 2px;
+}
+
+.yaruki {
+  margin-top: 50px;
+  text-align: center;
+}
+/* HOME */
+
+/* 自己紹介 */
+.myinfo {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 60px;
+}
+
+ul {
+  width: 300px;
+  text-align: center;
+}
+
+ul p {
+  padding-bottom: 20px;
+  font-size: 35px;
+  color: rgb(71, 69, 69);
+}
+
+li {
+  list-style-type: none;
+  font-size: 25px;
+  text-align: left;
+  color: rgb(71, 69, 69);
+}
+
+#my-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.my {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.my img {
+  width: 400px;
+  height: 250px;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+
+.my img:hover {
+  opacity: 0.7;
+  transition: 1s;
+}
+
+/* @media (max-width: 670px) {
+  .block {
+    height: 1500px;
+  }
+
+  .int-container {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .int-container div {
+    margin: 0 auto;
+    width: 80%;
+    height: 450px;
+  } */
+/* } */
+
+/* 自己紹介 */
+
+/* ペット */
+.petinfo {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 60px;
+}
+
+#pet-container {
+  width: 100%;
+  margin: 50px 0 100px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pet img {
+  width: 300px;
+  height: 270px;
+  border-radius: 25px;
+  opacity: 0.5;
+}
+
+.pet img:hover {
+  opacity: 0.7;
+  transition: 1s;
+}
+
+.pet p {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 0;
+}
+/* ペット */
+
+/* footer */
+footer {
+  height: 80px;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+/* footer */
+
+/* 花の内容 */
+/* 桜を表示するコンテナのスタイル */
+.cherry-blossom-container {
+  position: relative;
+  height: 260px; /* コンテナの高さ */
+  width: 100%; /* コンテナの横幅 */
+  overflow: hidden; /* コンテナからはみ出した要素を隠す */
+}
+
+/* 桜の花びらのスタイル */
+.petal {
+  position: absolute;
+  background-color: #ffc0cb; /* 花びらの色 */
+  border-radius: 150% 0 150% 0;
+  animation: animate-petal 10s linear;
+}
+
+.petal::after {
+  content: "";
+  position: absolute;
+  top: -14%;
+  left: -10%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ffc0cb;
+  border-radius: 150% 0 150% 0;
+  transform: rotate(15deg);
+}
+
+/* 花びらが降るアニメーション */
+@keyframes animate-petal {
+  0% {
+    top: 0;
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.2;
+    top: 100vh;
+    transform: rotate(1800deg);
+  }
+}
+/* 花の内容終わり */
+
+/* 投げ銭の内容 */
+.coin {
+  position: relative;
+  /* display: block; */
+  perspective: 250px;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  float: left;
+}
+
+.coin:before {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -26px;
+  margin-left: -26px;
+  content: "$";
+  animation: coin 2.5s linear infinite;
+  text-align: center;
+  color: #ffdf11;
+  border-top: 1px solid #bf9005;
+  border-right: 1px solid #ffe470;
+  border-bottom: 1px solid #ffe470;
+  border-left: 1px solid #bf9005;
+  border-radius: 50%;
+  background-color: #ffc311;
+  box-shadow: 0 0 0 2px #ffdf11, 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+@keyframes coin {
+  0% {
+    transform: rotateY(4deg) scaleX(1);
+    background-color: #ffda47;
+    box-shadow: 0 0 0 2px #ce9b04, 2px 2px 4px 0 rgba(0, 0, 0, 0.1),
+      0 0 0 #bf9005;
+  }
+  50% {
+    transform: rotateY(-85deg) scaleX(1.4);
+    background-color: #ce9b04;
+    box-shadow: 0 0 0 2px #ffdf11, 2px 2px 4px 0 rgba(0, 0, 0, 0.1),
+      5px 0 0 2px #876501;
+  }
+  51% {
+    transform: rotateY(-85deg) scaleX(1.4);
+    background-color: #ce9b04;
+    box-shadow: 0 0 0 2px #ffdf11, 2px 2px 4px 0 rgba(0, 0, 0, 0.1),
+      -5px 0 0 2px #fcee80;
+  }
+  100% {
+    transform: rotateY(-4deg) scaleX(1);
+    background-color: #ffda47;
+    box-shadow: 0 0 0 2px #ffdf11, 2px 2px 4px 0 rgba(0, 0, 0, 0.1),
+      0 0 0 0 #ffda47;
+  }
+}
+/* 投げ銭の内容終わり */
